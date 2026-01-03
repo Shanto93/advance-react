@@ -27,13 +27,13 @@ const App = () => {
     },
   ];
 
-  const chemists = people.filter((person) => person.profession === "chemist");
-  const listItems = chemists.map((chemist) => <li>{chemist.name}</li>);
+  const chemists = people.filter((person) => person.profession === "chemist").map((chemist) => <li>{chemist.name}</li>);
+  // const listItems = chemists.map((chemist) => <li>{chemist.name}</li>);
 
   return (
     <div>
       <h1>Home Page.</h1>
-      <p>{listItems} </p>
+      <p>{chemists} </p>
       {/* <Avatar person={person} size={100}></Avatar> */}
     </div>
   );
